@@ -39,6 +39,11 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': [2, { markupOnly: true }],
+        'react/self-closing-comp': ['error', {
+            component: false,
+            html: false,
+        }],
+        'arrow-body-style': ['error', 'always'],
     },
     globals: {
         __IS__DEV__: true,
