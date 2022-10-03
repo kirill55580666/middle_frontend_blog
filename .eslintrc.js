@@ -38,14 +38,22 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'i18next/no-literal-string': [2, { markupOnly: true }],
+        'i18next/no-literal-string': [2, { markupOnly: true, ignoreAttribute: ['data-testid'] }],
         'react/self-closing-comp': ['error', {
             component: false,
             html: false,
         }],
-        'arrow-body-style': ['error', 'always'],
+        // 'arrow-body-style': ['error', 'always'],
     },
     globals: {
         __IS__DEV__: true,
     },
+    overrides: [
+        {
+            files: ['**/src/**/*.test.{ts,tsx}'],
+            rules: {
+                'i18next/no-literal-string': 'off',
+            },
+        },
+    ],
 };
