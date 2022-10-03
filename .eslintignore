@@ -1,1 +1,3 @@
 jest.config.ts
+**/src/stories/*.ts
+**/src/stories/*.tsx
