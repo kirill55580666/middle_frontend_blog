@@ -40,7 +40,7 @@ module.exports = {
             component: false,
             html: false,
         }], // 'arrow-body-style': ['error', 'always'],
-        'linebreak-style': 0,
+        // 'linebreak-style': 0,
 
     },
     globals: {
