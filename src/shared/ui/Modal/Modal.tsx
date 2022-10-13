@@ -3,7 +3,6 @@ import React, {
     ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';
 import { Portal } from 'shared/ui/Portal/Portal';
-import { useTheme } from 'app/providers/ThemeProvider';
 import cls from './Modal.module.scss';
 
 interface ModalProps {
@@ -26,27 +25,28 @@ export const Modal = (props: ModalProps) => {
     } = props;
 
     const [isClosing, setIsClosing] = useState(false);
-    const [isOpening, setIsOpening] = useState(true);
+    const [isOpening, setIsOpening] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
     const timerRefOpening = useRef<ReturnType<typeof setTimeout>>();
-    const { theme } = useTheme();
+
+    useEffect(() => {
+        if (!isMounted) {
+            setIsOpening(true);
+            timerRefOpening.current = setTimeout(() => {
+                setIsOpening(false);
+            }, 10);
+        }
+        if (isOpen) {
+            setIsMounted(true);
+        }
+    }, [isMounted, isOpen]);
 
     // useEffect(() => {
     //     if (isOpen) {
     //         setIsMounted(true);
-    //         setIsOpening(true);
-    //         console.log(isOpening);
-    //         timerRefOpening.current = setTimeout(() => {
-    //             setIsOpening(false);
-    //         }, 10000);
     //     }
     // }, [isOpen]);
-    useEffect(() => {
-        if (isOpen) {
-            setIsMounted(true);
-        }
-    }, [isOpen]);
 
     const onContentClick = (event: React.MouseEvent<HTMLDivElement>) => {
         event.stopPropagation();
@@ -82,6 +82,7 @@ export const Modal = (props: ModalProps) => {
     const mods: Record<string, boolean> = {
         [cls.opened]: isOpen,
         [cls.isClosing]: isClosing,
+        [cls.isOpeningStyle]: isOpening,
     };
 
     if (lazy && !isMounted) {
