@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BugButton } from 'app/providers/ErrorBoundary';
+import { Text } from 'shared/ui/Text/Text';
 
 const MainPage = () => {
     const { t } = useTranslation('main');
