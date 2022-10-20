@@ -1,10 +1,20 @@
 const fs = require('fs');
 const jsonServer = require('json-server');
 const path = require('path');
+const cors = require('cors');
 
 const server = jsonServer.create();
 
 const router = jsonServer.router(path.resolve(__dirname, 'db.json'));
+
+// server.use(
+//     cors({
+//         origin: true,
+//         credentials: true,
+//         preflightContinue: false,
+//         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//     }),
+// );
 
 server.use(jsonServer.defaults({}));
 server.use(jsonServer.bodyParser);
@@ -16,6 +26,11 @@ server.use(async (req, res, next) => {
     });
     next();
 });
+//
+// server.use((req, res, next) => {
+//     res.header('Access-Control-Allow-Origin', 'http://localhost:3000');
+//     next();
+// });
 
 // Эндпоинт для логина
 server.post('/login', (req, res) => {
@@ -51,6 +66,7 @@ server.use((req, res, next) => {
 
 server.use(router);
 
+// server.options('*', cors());
 // запуск сервера
 server.listen(8000, () => {
     console.log('server is running on 8000 port');

@@ -22,7 +22,8 @@ export default {
   ],
 
   globals: {
-    __IS__DEV__: false
+    __IS__DEV__: false,
+    __API__: '',
   },
 
   moduleDirectories: [
