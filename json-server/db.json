@@ -29,10 +29,10 @@
     "first": "Кирилл",
     "lastname": "Рыжиков",
     "age": 22,
-    "currency": "RUB",
+    "currency": "USD",
     "country": "Russia",
     "city": "Ufa",
-    "username": "admin",
+    "username": "admin123",
     "avatar": "http://cyril-ryzhikov.ru/static/media/me.069b5d517d47e6360241.jpg"
   }
 }
