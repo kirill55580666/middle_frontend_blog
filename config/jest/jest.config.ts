@@ -24,6 +24,7 @@ export default {
   globals: {
     __IS__DEV__: false,
     __API__: '',
+    __PROJECT__: 'jest'
   },
 
   moduleDirectories: [

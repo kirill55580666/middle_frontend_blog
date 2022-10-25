@@ -3,7 +3,6 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import AxiosDecorator from 'shared/config/storybook/AxiosDecorator/AxiosDecorator';
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
 import ProfilePage from './ProfilePage';
@@ -32,7 +31,7 @@ Normal.decorators = [StoreDecorator({
             currency: Currency.USD,
         },
     },
-}), AxiosDecorator];
+})];
 
 export const Dark = Template.bind({});
 Dark.args = {};
@@ -48,4 +47,10 @@ Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
             currency: Currency.USD,
         },
     },
-}), AxiosDecorator];
+    user: {
+        authData: {
+            username: '123',
+            id: '123',
+        },
+    },
+})];
