@@ -25,7 +25,7 @@ Primary.args = {
         first: 'Cyril',
         city: 'Ufa',
         currency: Currency.USD,
-        avatar,
+        avatar: 'http://cyril-ryzhikov.ru/static/media/me.069b5d517d47e6360241.jpg',
     },
 };
 
