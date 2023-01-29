@@ -4,7 +4,6 @@ import React, {
     ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';
 import { Portal } from 'shared/ui/Portal/Portal';
-import { clearTimeout } from 'timers';
 import cls from './Modal.module.scss';
 
 interface ModalProps {
