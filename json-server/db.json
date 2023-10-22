@@ -19,7 +19,9 @@
       "img": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -107,23 +109,39 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN"
+      "role": "ADMIN",
+      "avatar": "http://cyril-ryzhikov.ru/static/media/me.069b5d517d47e6360241.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER"
+      "role": "USER",
+      "avatar": "http://cyril-ryzhikov.ru/static/media/me.069b5d517d47e6360241.jpg"
     }
   ],
-  "profile": {
-    "first": "Кирилл",
-    "lastname": "Рыжиков",
-    "age": 22,
-    "currency": "USD",
-    "country": "Russia",
-    "city": "Ufa",
-    "username": "admin123",
-    "avatar": "http://cyril-ryzhikov.ru/static/media/me.069b5d517d47e6360241.jpg"
-  }
+  "profile": [
+    {
+      "id":  "1",
+      "first": "Кирилл",
+      "lastname": "Рыжиков",
+      "age": 22,
+      "currency": "USD",
+      "country": "Russia",
+      "city": "Ufa",
+      "username": "admin123",
+      "avatar": "https://www.google.com/url?sa=i&url=http%3A%2F%2Fchelzoo.ru%2Fanimals%2Fvolk%2F&psig=AOvVaw1vIanH6dWrnuGItw65kMtG&ust=1698046729289000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPDojqiTiYIDFQAAAAAdAAAAABAD"
+    },
+    {
+      "id":  "2",
+      "first": "НеКирилл",
+      "lastname": "Рыжиков",
+      "age": 23,
+      "currency": "USD",
+      "country": "Russia",
+      "city": "Ufa",
+      "username": "admin123",
+      "avatar": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftaigaclothing.ru%2Fblog%2Fhistory-of-prints%2F41-lisa.html&psig=AOvVaw0NkF7WoqcZxQjmJyOL0ozD&ust=1698046774926000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNDKn76TiYIDFQAAAAAdAAAAABAD"
+    }
+  ]
 }
