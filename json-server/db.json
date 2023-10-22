@@ -102,6 +102,18 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Новый коммент",
+      "id": "6mhtHip"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Коммент от пользователя",
+      "id": "GCpUQ11"
     }
   ],
   "users": [
@@ -122,8 +134,8 @@
   ],
   "profile": [
     {
-      "id":  "1",
-      "first": "Кирилл",
+      "id": "1",
+      "first": "Кирилл123",
       "lastname": "Рыжиков",
       "age": 22,
       "currency": "USD",
@@ -133,7 +145,7 @@
       "avatar": "https://www.google.com/url?sa=i&url=http%3A%2F%2Fchelzoo.ru%2Fanimals%2Fvolk%2F&psig=AOvVaw1vIanH6dWrnuGItw65kMtG&ust=1698046729289000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPDojqiTiYIDFQAAAAAdAAAAABAD"
     },
     {
-      "id":  "2",
+      "id": "2",
       "first": "НеКирилл",
       "lastname": "Рыжиков",
       "age": 23,

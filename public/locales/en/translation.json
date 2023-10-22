@@ -18,5 +18,7 @@
   "Выйти": "Logout",
   "Укажите страну": "Change country",
   "Укажите валюту": "Specify currency",
-  "Комментарии отсутствуют": "No comments"
+  "Комментарии отсутствуют": "No comments",
+  "Введите текст комментария": "Enter comment text",
+  "Отправить": "Send"
 }
